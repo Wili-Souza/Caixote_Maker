@@ -11,9 +11,8 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
     </script>
-    <!-- html2canvas and reimg -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA==" crossorigin="anonymous"></script>
-    <script src="reimg.js"></script>
+    <!-- dom-to-image -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js" integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg==" crossorigin="anonymous"></script>
 
     <!-- My styles -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -65,10 +64,14 @@
                         <span id="i-h" class="change-size incrise-btn">+</span>
                     </div>
                 </div>
+            
+                <button id="download">
+                    Save
+                </button>
             </div>
         </div>
 
-        <div class="canvas">
+        <div  id="avatar"  class="canvas">
             <div class="canvas-content">
                 <div class="head c-la">
                     <div class="ear ear-1 c-la"></div>
@@ -122,10 +125,6 @@
         </div>
 
     </div>
-
-    <button id="download">
-        Save
-    </button>
 
     <!-- My scripts -->
     <script type="module" src="index.js"></script>

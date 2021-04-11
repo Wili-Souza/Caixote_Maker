@@ -139,13 +139,13 @@ function loadPickers() {
 }
 
 function download() {
-    html2canvas($(".canvas-content"), {
-        onrendered: function(canvas) {
-            document.body.append(canvas)
-            // Canvas2Image.saveAsPNG(canvas);
-            ReImg.fromCanvas(canvas).downloadPng();
-        }
-    })
+    domtoimage.toJpeg(document.getElementById("avatar"))
+        .then(dataUrl => {
+            var link = document.createElement('a');
+            link.download = 'my-caixote.jpeg';
+            link.href = dataUrl;
+            link.click();
+        })
 }
 
 var styleOptions = [eyeBr, eyeB, skin, mouth]
