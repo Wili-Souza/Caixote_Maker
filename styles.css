@@ -182,7 +182,7 @@ body {
 /* ears */
 
 .ear {
-    bottom: 100%;
+    bottom: 99%;
     height: 27px;
     width: 60px;
     border-radius: 5px 5px 0 0;
