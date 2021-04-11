@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <!-- html2canvas and reimg -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA==" crossorigin="anonymous"></script>
+    <script src="reimg.js"></script>
+
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>Caixote Maker</title>
+</head>
+<body>
+    <!-- option box -->
+    <div class="content">
+        <div class="option-box">
+            <div class="option-tabs">
+                <div name="Eyebrow" id="tab1" class="s-all tab">
+                    <div class="tab-content tab-active">
+                        Eyebrow
+                    </div> 
+                </div>
+                <div name="Eyes" id="tab2" class="s-all tab">
+                    <div class="tab-content">
+                        Eyes
+                    </div> 
+                </div>
+                <div name="Body" id="tab3" class="s-all tab">
+                    <div class="tab-content">
+                        Body
+                    </div> 
+                </div>
+                <div name="Mouth" id="tab4" class="s-all tab">
+                    <div class="tab-content">
+                        Mouth
+                    </div> 
+                </div>
+            </div>
+            <div class="shadow s-all option-screen">
+                <div class="option-content">
+                    <h2 id="op-title">Choose your Eyebrow</h2>
+                    <hr>
+                    <label id="pick-color">Color: </label>
+                    <label id="pick-format">Format: </label>
+                    <label id="pick-angle">Angle: </label>
+
+                    <br>
+                    <div class="size-options">
+                        <label id="pick-width">width: </label>
+                        <span id="d-w" class="change-size decrise-btn">-</span>
+                        <span id="i-w" class="change-size incrise-btn">+</span>
+    
+                        <label id="pick-height">Height: </label>
+                        <span id="d-h" class="change-size decrise-btn">-</span>
+                        <span id="i-h" class="change-size incrise-btn">+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas">
+            <div class="canvas-content">
+                <div class="head c-la">
+                    <div class="ear ear-1 c-la"></div>
+                    <div class="head-front"></div>
+                    <div class="ear ear-2 c-la"></div>
+                    <div class="head-side"></div>
+
+                    <div class="eye-container first">
+                        <div class="eye eye-1-1">
+                            <div class="eb eb-1 c-la"></div>
+                            <div class="light c-la"></div>
+                        </div>
+                    </div>
+                    <div class="eye-container last">
+                        <div class="eye eye-1-2">
+                            <div class="eb c-la"></div>
+                            <div class="light c-la"></div>
+                        </div>
+                    </div>
+
+                    <div class="ebr-container first">
+                        <div class="ebr ebr-1"></div>
+                    </div>
+                    <div class="ebr-container last">
+                        <div class="ebr ebr-2"></div>
+                    </div>
+
+                    <div class="mouth c-la">
+                        <div class="mouth-i after c-la"></div>
+                    </div>
+
+                </div>
+                <div class="body c-la">
+                    <div class="body-front c-la">  
+                        <div class="body-shadow"></div>
+                    </div>
+                    <div class="body-side c-la">
+                        <div class="body-shadow-d"></div>
+                    </div>
+                    <div class="arm arm-1  c-la"></div>
+                    <div class="arm arm-2  c-la"></div>
+                    <div class="arm arm-side c-la">
+                        <div class="arm-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-header">
+            <h2>Make your Caixote</h2>
+        </div>
+
+    </div>
+
+    <button id="download">
+        Save
+    </button>
+
+    <!-- My scripts -->
+    <script type="module" src="index.js"></script>
+</body>
+</html>
