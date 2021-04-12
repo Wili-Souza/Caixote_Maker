@@ -375,6 +375,7 @@ body {
     width: 10px;
     height: 8px;
     background:rgb(211, 94, 86);  
+    z-index: 2;
 }
 
 .mouth-i {
